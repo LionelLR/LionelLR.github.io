@@ -1916,7 +1916,7 @@ function astra_get_filter_svg( $filter_id, $color ) {
 	?>
 
 	<svg
-		xmlns="https://www.w3.org/2000/svg"
+		xmlns="http://www.w3.org/2000/svg"
 		viewBox="0 0 0 0"
 		width="0"
 		height="0"
@@ -2072,7 +2072,7 @@ function astra_get_logo_svg_icons_array() {
 				if ( $path && $view ) {
 					ob_start();
 					?>
-				<svg xmlns="https://www.w3.org/2000/svg" viewBox= "<?php echo esc_attr( $view ); ?>"><path d="<?php echo esc_attr( $path ); ?>"></path></svg>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox= "<?php echo esc_attr( $view ); ?>"><path d="<?php echo esc_attr( $path ); ?>"></path></svg>
 					<?php
 					$icon['rendered'] = trim( ob_get_clean() );
 				}

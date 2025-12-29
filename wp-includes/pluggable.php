@@ -1336,7 +1336,7 @@ if ( ! function_exists( 'auth_redirect' ) ) :
 		if ( str_contains( $_SERVER['REQUEST_URI'], '/options.php' ) && wp_get_referer() ) {
 			$redirect = wp_get_referer();
 		} else {
-			$redirect = set_url_scheme( 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] );
+			$redirect = set_url_scheme( 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] );
 		}
 
 		$login_url = wp_login_url( $redirect, true );
@@ -1662,11 +1662,11 @@ if ( ! function_exists( 'wp_validate_redirect' ) ) :
 		$location = wp_sanitize_redirect( trim( $location, " \t\n\r\0\x08\x0B" ) );
 		// Browsers will assume 'http' is your protocol, and will obey a redirect to a URL starting with '//'.
 		if ( str_starts_with( $location, '//' ) ) {
-			$location = 'https:' . $location;
+			$location = 'http:' . $location;
 		}
 
 		/*
-		 * In PHP 5 parse_url() may fail if the URL query part contains 'https://'.
+		 * In PHP 5 parse_url() may fail if the URL query part contains 'http://'.
 		 * See https://bugs.php.net/bug.php?id=38143
 		 */
 		$cut  = strpos( $location, '?' );
@@ -1687,7 +1687,7 @@ if ( ! function_exists( 'wp_validate_redirect' ) ) :
 		if ( ! isset( $lp['host'] ) && ! empty( $lp['path'] ) && '/' !== $lp['path'][0] ) {
 			$path = '';
 			if ( ! empty( $_SERVER['REQUEST_URI'] ) ) {
-				$path = dirname( parse_url( 'https://placeholder' . $_SERVER['REQUEST_URI'], PHP_URL_PATH ) . '?' );
+				$path = dirname( parse_url( 'http://placeholder' . $_SERVER['REQUEST_URI'], PHP_URL_PATH ) . '?' );
 				$path = wp_normalize_path( $path );
 			}
 			$location = '/' . ltrim( $path . '/', '/' ) . $location;
@@ -1816,7 +1816,7 @@ if ( ! function_exists( 'wp_notify_postauthor' ) ) :
 		}
 
 		$comment_author_domain = '';
-		if ( WP_https::is_ip_address( $comment->comment_author_IP ) ) {
+		if ( WP_Http::is_ip_address( $comment->comment_author_IP ) ) {
 			$comment_author_domain = gethostbyaddr( $comment->comment_author_IP );
 		}
 
@@ -2029,7 +2029,7 @@ if ( ! function_exists( 'wp_notify_moderator' ) ) :
 		}
 
 		$comment_author_domain = '';
-		if ( WP_https::is_ip_address( $comment->comment_author_IP ) ) {
+		if ( WP_Http::is_ip_address( $comment->comment_author_IP ) ) {
 			$comment_author_domain = gethostbyaddr( $comment->comment_author_IP );
 		}
 

@@ -6,7 +6,7 @@ Tested up to: 6.9
 Requires PHP: 7.4
 Stable tag:  3.5.4
 License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Create a static website directly from your WordPress website with Simply Static.
 

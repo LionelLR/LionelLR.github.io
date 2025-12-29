@@ -1818,7 +1818,7 @@ class WP_REST_Server {
 					'failed'    => 'validation',
 					'responses' => $responses,
 				),
-				WP_https::MULTI_STATUS
+				WP_Http::MULTI_STATUS
 			);
 		}
 
@@ -1868,7 +1868,7 @@ class WP_REST_Server {
 			$responses[] = $this->envelope_response( $result, false )->get_data();
 		}
 
-		return new WP_REST_Response( array( 'responses' => $responses ), WP_https::MULTI_STATUS );
+		return new WP_REST_Response( array( 'responses' => $responses ), WP_Http::MULTI_STATUS );
 	}
 
 	/**

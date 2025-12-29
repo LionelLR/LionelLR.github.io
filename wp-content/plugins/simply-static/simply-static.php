@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Author:            Patrick Posner
  * Author URI:        https://patrickposner.com
  * License:           GPL-2.0+
- * License URI:       https://www.gnu.org/licenses/gpl-2.0.txt
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       simply-static
  * Domain Path:       /languages
  */

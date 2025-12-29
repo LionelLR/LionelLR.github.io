@@ -169,7 +169,7 @@ EOD;
                 'specVersion' => 20010516
         ),
             'system.multicall' => array(
-                'specUrl' => 'https://web.archive.org/web/20060624230303/https://www.xmlrpc.com/discuss/msgReader$1208?mode=topic',
+                'specUrl' => 'https://web.archive.org/web/20060624230303/http://www.xmlrpc.com/discuss/msgReader$1208?mode=topic',
                 'specVersion' => 1
         ),
         );
@@ -196,7 +196,7 @@ EOD;
 
     function multiCall($methodcalls)
     {
-        // See https://www.xmlrpc.com/discuss/msgReader$1208
+        // See http://www.xmlrpc.com/discuss/msgReader$1208
         $return = array();
         foreach ($methodcalls as $call) {
             $method = $call['methodName'];

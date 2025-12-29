@@ -400,7 +400,7 @@ class Sanitize implements RegistryAware
     public function https_url(string $url)
     {
         return (
-            strtolower(substr($url, 0, 7)) === 'https://'
+            strtolower(substr($url, 0, 7)) === 'http://'
             && ($parsed = parse_url($url, PHP_URL_HOST)) !== false // Malformed URL
             && $parsed !== null // Missing host
             && $this->is_https_domain($parsed) // Should be forced?
@@ -462,7 +462,7 @@ class Sanitize implements RegistryAware
 
                 // Strip out HTML tags and attributes that might cause various security problems.
                 // Based on recommendations by Mark Pilgrim at:
-                // https://web.archive.org/web/20110902041826/https://diveintomark.org:80/archives/2003/06/12/how_to_consume_rss_safely
+                // https://web.archive.org/web/20110902041826/http://diveintomark.org:80/archives/2003/06/12/how_to_consume_rss_safely
                 if ($this->strip_htmltags) {
                     foreach ($this->strip_htmltags as $tag) {
                         $this->strip_tag($tag, $document, $xpath, $type);
@@ -582,7 +582,7 @@ class Sanitize implements RegistryAware
             $ret .= '<!DOCTYPE html>';
             $content_type = 'text/html';
         } else {
-            $ret .= '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">';
+            $ret .= '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">';
             $content_type = 'application/xhtml+xml';
         }
 

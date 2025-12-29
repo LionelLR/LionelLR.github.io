@@ -729,8 +729,8 @@ class Util {
 	/**
 	 * Given a URL extracted from a page, return an absolute URL
 	 *
-	 * Takes a URL (e.g. /test) extracted from a page (e.g. https://foo.com/bar/) and
-	 * returns an absolute URL (e.g. https://foo.com/bar/test). Absolute URLs are
+	 * Takes a URL (e.g. /test) extracted from a page (e.g. http://foo.com/bar/) and
+	 * returns an absolute URL (e.g. http://foo.com/bar/test). Absolute URLs are
 	 * returned as-is. Exception: links beginning with a # (hash) are left as-is.
 	 *
 	 * A null value is returned in the event that the extracted_url is blank or it's
@@ -763,7 +763,7 @@ class Util {
 		// check for a protocol-less URL
 		// (Note: there's a bug in PHP <= 5.4.7 where parsed URLs starting with //
 		// are treated as a path. So we're doing this check upfront.)
-		// https://php.net/manual/en/function.parse-url.php#example-4617
+		// http://php.net/manual/en/function.parse-url.php#example-4617
 		if ( strpos( $extracted_url, '//' ) === 0 ) {
 
 			// if this is a local URL, add the protocol to the URL
@@ -919,7 +919,7 @@ class Util {
 		}
 
 		// using preg_split to intelligently break at newlines
-		// see: https://stackoverflow.com/questions/1483497/how-to-put-string-in-array-split-by-new-line
+		// see: http://stackoverflow.com/questions/1483497/how-to-put-string-in-array-split-by-new-line
 		$lines = preg_split( "/\r\n|\n|\r/", $textarea );
 		array_walk( $lines, 'trim' );
 		$lines = array_filter( $lines );
@@ -928,7 +928,7 @@ class Util {
 	}
 
 	/**
-	 * Remove the //, https://, https:// protocols from a URL
+	 * Remove the //, http://, https:// protocols from a URL
 	 *
 	 * @param string $url URL to remove protocol from
 	 *

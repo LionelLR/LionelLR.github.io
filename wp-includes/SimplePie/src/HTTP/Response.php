@@ -39,7 +39,7 @@ interface Response
      * - If a query is present, it MUST be prefixed by "?".
      * - If a fragment is present, it MUST be prefixed by "#".
      *
-     * @see https://tools.ietf.org/html/rfc3986#section-4.1
+     * @see http://tools.ietf.org/html/rfc3986#section-4.1
      */
     public function get_permanent_uri(): string;
 
@@ -63,7 +63,7 @@ interface Response
      * - If a query is present, it MUST be prefixed by "?".
      * - If a fragment is present, it MUST be prefixed by "#".
      *
-     * @see https://tools.ietf.org/html/rfc3986#section-4.1
+     * @see http://tools.ietf.org/html/rfc3986#section-4.1
      */
     public function get_final_requested_uri(): string;
 

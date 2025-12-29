@@ -3162,7 +3162,7 @@ function _wp_normalize_relative_css_links( $css, $stylesheet_url ) {
 
 			// Short-circuit if the URL does not require normalization.
 			if (
-				str_starts_with( $url, 'https:' ) ||
+				str_starts_with( $url, 'http:' ) ||
 				str_starts_with( $url, 'https:' ) ||
 				str_starts_with( $url, '/' ) ||
 				str_starts_with( $url, '#' ) ||

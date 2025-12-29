@@ -104,7 +104,7 @@ class Caption
     /**
      * Get the language
      *
-     * @link https://tools.ietf.org/html/rfc3066
+     * @link http://tools.ietf.org/html/rfc3066
      * @return string|null Language code as per RFC 3066
      */
     public function get_language()

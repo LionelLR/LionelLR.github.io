@@ -494,7 +494,7 @@ class Enclosure
     /**
      * Get a single hash
      *
-     * @link https://www.rssboard.org/media-rss#media-hash
+     * @link http://www.rssboard.org/media-rss#media-hash
      * @param int $key
      * @return string|null Hash as per `media:hash`, prefixed with "$algo:"
      */
@@ -539,7 +539,7 @@ class Enclosure
     /**
      * Get the language
      *
-     * @link https://tools.ietf.org/html/rfc3066
+     * @link http://tools.ietf.org/html/rfc3066
      * @return string|null Language code as per RFC 3066
      */
     public function get_language()
@@ -612,7 +612,7 @@ class Enclosure
     /**
      * Get the medium
      *
-     * @link https://www.rssboard.org/media-rss#media-content
+     * @link http://www.rssboard.org/media-rss#media-content
      * @return string|null Should be one of 'image', 'audio', 'video', 'document', 'executable'
      */
     public function get_medium()
@@ -983,7 +983,7 @@ class Enclosure
         // Flash
         if ($handler === 'flash') {
             if ($native) {
-                $embed .= "<embed src=\"" . $this->get_link() . "\" pluginspage=\"https://adobe.com/go/getflashplayer\" type=\"$type\" quality=\"high\" width=\"$width\" height=\"$height\" bgcolor=\"$bgcolor\" loop=\"$loop\"></embed>";
+                $embed .= "<embed src=\"" . $this->get_link() . "\" pluginspage=\"http://adobe.com/go/getflashplayer\" type=\"$type\" quality=\"high\" width=\"$width\" height=\"$height\" bgcolor=\"$bgcolor\" loop=\"$loop\"></embed>";
             } else {
                 $embed .= "<script type='text/javascript'>embed_flash('$bgcolor', '$width', '$height', '" . $this->get_link() . "', '$loop', '$type');</script>";
             }
@@ -997,7 +997,7 @@ class Enclosure
             }
 
             if ($native) {
-                $embed .= "<embed src=\"$mediaplayer\" pluginspage=\"https://adobe.com/go/getflashplayer\" type=\"application/x-shockwave-flash\" quality=\"high\" width=\"$width\" height=\"$height\" wmode=\"transparent\" flashvars=\"file=" . rawurlencode($this->get_link().'?file_extension=.'.$this->get_extension()) . "&autostart=false&repeat=$loop&showdigits=true&showfsbutton=false\"></embed>";
+                $embed .= "<embed src=\"$mediaplayer\" pluginspage=\"http://adobe.com/go/getflashplayer\" type=\"application/x-shockwave-flash\" quality=\"high\" width=\"$width\" height=\"$height\" wmode=\"transparent\" flashvars=\"file=" . rawurlencode($this->get_link().'?file_extension=.'.$this->get_extension()) . "&autostart=false&repeat=$loop&showdigits=true&showfsbutton=false\"></embed>";
             } else {
                 $embed .= "<script type='text/javascript'>embed_flv('$width', '$height', '" . rawurlencode($this->get_link().'?file_extension=.'.$this->get_extension()) . "', '$placeholder', '$loop', '$mediaplayer');</script>";
             }
@@ -1012,9 +1012,9 @@ class Enclosure
 
             if ($native) {
                 if ($placeholder !== '') {
-                    $embed .= "<embed type=\"$type\" style=\"cursor:hand; cursor:pointer;\" href=\"" . $this->get_link() . "\" src=\"$placeholder\" width=\"$width\" height=\"$height\" autoplay=\"false\" target=\"myself\" controller=\"false\" loop=\"$loop\" scale=\"aspect\" bgcolor=\"$bgcolor\" pluginspage=\"https://apple.com/quicktime/download/\"></embed>";
+                    $embed .= "<embed type=\"$type\" style=\"cursor:hand; cursor:pointer;\" href=\"" . $this->get_link() . "\" src=\"$placeholder\" width=\"$width\" height=\"$height\" autoplay=\"false\" target=\"myself\" controller=\"false\" loop=\"$loop\" scale=\"aspect\" bgcolor=\"$bgcolor\" pluginspage=\"http://apple.com/quicktime/download/\"></embed>";
                 } else {
-                    $embed .= "<embed type=\"$type\" style=\"cursor:hand; cursor:pointer;\" src=\"" . $this->get_link() . "\" width=\"$width\" height=\"$height\" autoplay=\"false\" target=\"myself\" controller=\"true\" loop=\"$loop\" scale=\"aspect\" bgcolor=\"$bgcolor\" pluginspage=\"https://apple.com/quicktime/download/\"></embed>";
+                    $embed .= "<embed type=\"$type\" style=\"cursor:hand; cursor:pointer;\" src=\"" . $this->get_link() . "\" width=\"$width\" height=\"$height\" autoplay=\"false\" target=\"myself\" controller=\"true\" loop=\"$loop\" scale=\"aspect\" bgcolor=\"$bgcolor\" pluginspage=\"http://apple.com/quicktime/download/\"></embed>";
                 }
             } else {
                 $embed .= "<script type='text/javascript'>embed_quicktime('$type', '$bgcolor', '$width', '$height', '" . $this->get_link() . "', '$placeholder', '$loop');</script>";

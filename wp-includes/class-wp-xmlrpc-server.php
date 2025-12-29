@@ -139,7 +139,7 @@ class wp_xmlrpc_server extends IXR_Server {
 
 			/*
 			 * MetaWeblog API aliases for Blogger API.
-			 * See https://www.xmlrpc.com/stories/storyReader$2460
+			 * See http://www.xmlrpc.com/stories/storyReader$2460
 			 */
 			'metaWeblog.deletePost'            => 'this:blogger_deletePost',
 			'metaWeblog.getUsersBlogs'         => 'this:blogger_getUsersBlogs',
@@ -4816,7 +4816,7 @@ class wp_xmlrpc_server extends IXR_Server {
 
 	/*
 	 * Blogger API functions.
-	 * Specs on https://plant.blogger.com/api and https://groups.yahoo.com/group/bloggerDev/
+	 * Specs on http://plant.blogger.com/api and https://groups.yahoo.com/group/bloggerDev/
 	 */
 
 	/**
@@ -6429,7 +6429,7 @@ class wp_xmlrpc_server extends IXR_Server {
 	 *
 	 * Adapted from a patch by Johann Richard.
 	 *
-	 * @link https://mycvs.org/archives/2004/06/30/file-upload-to-wordpress-in-ecto/
+	 * @link http://mycvs.org/archives/2004/06/30/file-upload-to-wordpress-in-ecto/
 	 *
 	 * @since 1.5.0
 	 *
@@ -6544,7 +6544,7 @@ class wp_xmlrpc_server extends IXR_Server {
 
 	/*
 	 * MovableType API functions.
-	 * Specs archive on https://web.archive.org/web/20050220091302/https://www.movabletype.org/docs/mtmanual_programmatic.html
+	 * Specs archive on https://web.archive.org/web/20050220091302/http://www.movabletype.org/docs/mtmanual_programmatic.html
 	 */
 
 	/**
@@ -6937,7 +6937,7 @@ class wp_xmlrpc_server extends IXR_Server {
 		}
 
 		// Check if the page linked to is on our site.
-		$pos1 = strpos( $pagelinkedto, str_replace( array( 'https://www.', 'https://', 'https://www.', 'https://' ), '', get_option( 'home' ) ) );
+		$pos1 = strpos( $pagelinkedto, str_replace( array( 'http://www.', 'http://', 'https://www.', 'https://' ), '', get_option( 'home' ) ) );
 		if ( ! $pos1 ) {
 			return $this->pingback_error( 0, __( 'Is there no link to us?' ) );
 		}
@@ -7158,7 +7158,7 @@ class wp_xmlrpc_server extends IXR_Server {
 	/**
 	 * Retrieves an array of URLs that pingbacked the given URL.
 	 *
-	 * Specs on https://www.aquarionics.com/misc/archives/blogite/0198.html
+	 * Specs on http://www.aquarionics.com/misc/archives/blogite/0198.html
 	 *
 	 * @since 1.5.0
 	 *

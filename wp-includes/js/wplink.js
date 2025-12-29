@@ -91,12 +91,12 @@
 			inputs.url.on( 'blur', wpLink.correctURL );
 		},
 
-		// If URL wasn't corrected last time and doesn't start with https:, https:, ? # or /, prepend https://.
+		// If URL wasn't corrected last time and doesn't start with http:, https:, ? # or /, prepend http://.
 		correctURL: function () {
 			var url = inputs.url.val().trim();
 
 			if ( url && correctedURL !== url && ! /^(?:[a-z]+:|#|\?|\.|\/)/.test( url ) ) {
-				inputs.url.val( 'https://' + url );
+				inputs.url.val( 'http://' + url );
 				correctedURL = url;
 			}
 		},
@@ -200,7 +200,7 @@
 				rivers.recent.ajax();
 			}
 
-			correctedURL = inputs.url.val().replace( /^https:\/\//, '' );
+			correctedURL = inputs.url.val().replace( /^http:\/\//, '' );
 		},
 
 		hasSelectedText: function( linkNode ) {

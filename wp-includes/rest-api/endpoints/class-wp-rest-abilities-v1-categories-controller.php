@@ -231,7 +231,7 @@ class WP_REST_Abilities_V1_Categories_Controller extends WP_REST_Controller {
 	 */
 	public function get_item_schema(): array {
 		$schema = array(
-			'$schema'    => 'https://json-schema.org/draft-04/schema#',
+			'$schema'    => 'http://json-schema.org/draft-04/schema#',
 			'title'      => 'ability-category',
 			'type'       => 'object',
 			'properties' => array(

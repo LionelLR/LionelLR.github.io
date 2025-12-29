@@ -868,7 +868,7 @@ if ( ! class_exists( 'Astra_Elementor_Editor_Settings' ) ) {
 		private static function transform_svg( $svg ) {
 			// Basic validation: check if input is a non-empty string.
 			if ( trim( $svg ) === '' ) {
-				return rawurlencode( "<svg xmlns='https://www.w3.org/2000/svg' width='1' height='1'></svg>" );
+				return rawurlencode( "<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'></svg>" );
 			}
 
 			// Replace only the first occurrence of stroke='#D1D5DB' with a semi-transparent color.

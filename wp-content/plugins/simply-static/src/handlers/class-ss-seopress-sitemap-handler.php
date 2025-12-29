@@ -143,7 +143,7 @@ class SEOPress_Sitemap_Handler extends Page_Handler {
         } else {
             // Fallback to a basic XSL if the function doesn't exist
             echo '<?xml version="1.0" encoding="UTF-8"?>';
-            echo '<xsl:stylesheet version="2.0" xmlns:xsl="https://www.w3.org/1999/XSL/Transform" xmlns:sitemap="https://www.sitemaps.org/schemas/sitemap/0.9">';
+            echo '<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sitemap="http://www.sitemaps.org/schemas/sitemap/0.9">';
             echo '<xsl:output method="html" encoding="UTF-8" indent="yes"/>';
             echo '<xsl:template match="/">';
             echo '<html><head><title>XML Sitemap</title>';

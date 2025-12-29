@@ -112,7 +112,7 @@ if ( ! class_exists( 'Deactivation_Survey_Feedback' ) ) {
 								<img class="uds-icon" src="<?php echo esc_url( $args['popup_logo'] ); ?>" title="<?php echo esc_attr( $args['plugin_slug'] ); ?> <?php echo esc_attr( __( 'Icon', 'astra' ) ); ?>" />							<?php } ?>
 							<h2 class="uds-title"><?php echo esc_html( $args['popup_title'] ); ?></h2>
 						</div>
-						<svg xmlns="https://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="uds-close">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="uds-close">
 							<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
 						</svg>
 					</div>

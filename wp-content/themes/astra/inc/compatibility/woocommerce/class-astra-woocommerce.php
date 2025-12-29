@@ -2596,7 +2596,7 @@ if ( ! class_exists( 'Astra_Woocommerce' ) ) {
 			 */
 
 			$arrow_color = str_replace( '#', '%23', $global_palette['palette'][3] );
-			$arrow_bg    = "data:image/svg+xml,%3Csvg class='ast-arrow-svg' xmlns='https://www.w3.org/2000/svg' xmlns:xlink='https://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='26px' height='16.043px' fill='" . $arrow_color . "' viewBox='57 35.171 26 16.043' enable-background='new 57 35.171 26 16.043' xml:space='preserve' %3E%3Cpath d='M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z'%3E%3C/path%3E%3C/svg%3E";
+			$arrow_bg    = "data:image/svg+xml,%3Csvg class='ast-arrow-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='26px' height='16.043px' fill='" . $arrow_color . "' viewBox='57 35.171 26 16.043' enable-background='new 57 35.171 26 16.043' xml:space='preserve' %3E%3Cpath d='M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z'%3E%3C/path%3E%3C/svg%3E";
 
 			$css_output_woo_select_default = array(
 				'select, .select2-container .select2-selection--single' => array(

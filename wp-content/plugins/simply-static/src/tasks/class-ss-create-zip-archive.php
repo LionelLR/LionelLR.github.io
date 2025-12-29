@@ -29,8 +29,8 @@ class Create_Zip_Archive_Task extends Task {
 		} else {
 			if ( defined( 'SS_WASM' ) ) {
 				// Force download link to be SSL.
-				if ( strpos( $download_url, 'https://' ) !== false ) {
-					$download_url = str_replace( 'https://', 'https://', $download_url );
+				if ( strpos( $download_url, 'http://' ) !== false ) {
+					$download_url = str_replace( 'http://', 'https://', $download_url );
 				}
 			}
 

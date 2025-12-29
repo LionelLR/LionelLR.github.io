@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package     Astra
- * @link        https://wpastra.com/
+ * @link        http://wpastra.com/
  * @since       Astra 3.8.0
  */
 

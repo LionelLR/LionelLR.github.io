@@ -17,7 +17,7 @@
  * @package   BreadcrumbTrail
  * @version   1.1.0
  * @link      https://themehybrid.com/plugins/breadcrumb-trail
- * @license   https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -295,7 +295,7 @@ class Astra_Breadcrumb_Trail {
 			$breadcrumb .= sprintf(
 				'<%1$s class="trail-items" %2$s>',
 				tag_escape( $this->args['list_tag'] ),
-				( $this->args['schema'] ? 'itemscope itemtype="https://schema.org/BreadcrumbList"' : '' )
+				( $this->args['schema'] ? 'itemscope itemtype="http://schema.org/BreadcrumbList"' : '' )
 			);
 
 			if ( $this->args['schema'] ) {
@@ -337,7 +337,7 @@ class Astra_Breadcrumb_Trail {
 
 				// Add list item classes.
 				$item_class       = 'trail-item';
-				$item_schema_attr = 'itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"';
+				$item_schema_attr = 'itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"';
 
 				if ( 1 === $item_position && 1 < $item_count ) {
 					$item_class .= ' trail-begin';

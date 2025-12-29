@@ -44,7 +44,7 @@ class SimplePie
     /**
      * SimplePie Website URL
      */
-    public const URL = 'https://simplepie.org';
+    public const URL = 'http://simplepie.org';
 
     /**
      * SimplePie Linkback
@@ -246,37 +246,37 @@ class SimplePie
     /**
      * XML Namespace
      */
-    public const NAMESPACE_XML = 'https://www.w3.org/XML/1998/namespace';
+    public const NAMESPACE_XML = 'http://www.w3.org/XML/1998/namespace';
 
     /**
      * Atom 1.0 Namespace
      */
-    public const NAMESPACE_ATOM_10 = 'https://www.w3.org/2005/Atom';
+    public const NAMESPACE_ATOM_10 = 'http://www.w3.org/2005/Atom';
 
     /**
      * Atom 0.3 Namespace
      */
-    public const NAMESPACE_ATOM_03 = 'https://purl.org/atom/ns#';
+    public const NAMESPACE_ATOM_03 = 'http://purl.org/atom/ns#';
 
     /**
      * RDF Namespace
      */
-    public const NAMESPACE_RDF = 'https://www.w3.org/1999/02/22-rdf-syntax-ns#';
+    public const NAMESPACE_RDF = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#';
 
     /**
      * RSS 0.90 Namespace
      */
-    public const NAMESPACE_RSS_090 = 'https://my.netscape.com/rdf/simple/0.9/';
+    public const NAMESPACE_RSS_090 = 'http://my.netscape.com/rdf/simple/0.9/';
 
     /**
      * RSS 1.0 Namespace
      */
-    public const NAMESPACE_RSS_10 = 'https://purl.org/rss/1.0/';
+    public const NAMESPACE_RSS_10 = 'http://purl.org/rss/1.0/';
 
     /**
      * RSS 1.0 Content Module Namespace
      */
-    public const NAMESPACE_RSS_10_MODULES_CONTENT = 'https://purl.org/rss/1.0/modules/content/';
+    public const NAMESPACE_RSS_10_MODULES_CONTENT = 'http://purl.org/rss/1.0/modules/content/';
 
     /**
      * RSS 2.0 Namespace
@@ -287,67 +287,67 @@ class SimplePie
     /**
      * DC 1.0 Namespace
      */
-    public const NAMESPACE_DC_10 = 'https://purl.org/dc/elements/1.0/';
+    public const NAMESPACE_DC_10 = 'http://purl.org/dc/elements/1.0/';
 
     /**
      * DC 1.1 Namespace
      */
-    public const NAMESPACE_DC_11 = 'https://purl.org/dc/elements/1.1/';
+    public const NAMESPACE_DC_11 = 'http://purl.org/dc/elements/1.1/';
 
     /**
      * W3C Basic Geo (WGS84 lat/long) Vocabulary Namespace
      */
-    public const NAMESPACE_W3C_BASIC_GEO = 'https://www.w3.org/2003/01/geo/wgs84_pos#';
+    public const NAMESPACE_W3C_BASIC_GEO = 'http://www.w3.org/2003/01/geo/wgs84_pos#';
 
     /**
      * GeoRSS Namespace
      */
-    public const NAMESPACE_GEORSS = 'https://www.georss.org/georss';
+    public const NAMESPACE_GEORSS = 'http://www.georss.org/georss';
 
     /**
      * Media RSS Namespace
      */
-    public const NAMESPACE_MEDIARSS = 'https://search.yahoo.com/mrss/';
+    public const NAMESPACE_MEDIARSS = 'http://search.yahoo.com/mrss/';
 
     /**
      * Wrong Media RSS Namespace. Caused by a long-standing typo in the spec.
      */
-    public const NAMESPACE_MEDIARSS_WRONG = 'https://search.yahoo.com/mrss';
+    public const NAMESPACE_MEDIARSS_WRONG = 'http://search.yahoo.com/mrss';
 
     /**
      * Wrong Media RSS Namespace #2. New namespace introduced in Media RSS 1.5.
      */
-    public const NAMESPACE_MEDIARSS_WRONG2 = 'https://video.search.yahoo.com/mrss';
+    public const NAMESPACE_MEDIARSS_WRONG2 = 'http://video.search.yahoo.com/mrss';
 
     /**
      * Wrong Media RSS Namespace #3. A possible typo of the Media RSS 1.5 namespace.
      */
-    public const NAMESPACE_MEDIARSS_WRONG3 = 'https://video.search.yahoo.com/mrss/';
+    public const NAMESPACE_MEDIARSS_WRONG3 = 'http://video.search.yahoo.com/mrss/';
 
     /**
      * Wrong Media RSS Namespace #4. New spec location after the RSS Advisory Board takes it over, but not a valid namespace.
      */
-    public const NAMESPACE_MEDIARSS_WRONG4 = 'https://www.rssboard.org/media-rss';
+    public const NAMESPACE_MEDIARSS_WRONG4 = 'http://www.rssboard.org/media-rss';
 
     /**
      * Wrong Media RSS Namespace #5. A possible typo of the RSS Advisory Board URL.
      */
-    public const NAMESPACE_MEDIARSS_WRONG5 = 'https://www.rssboard.org/media-rss/';
+    public const NAMESPACE_MEDIARSS_WRONG5 = 'http://www.rssboard.org/media-rss/';
 
     /**
      * iTunes RSS Namespace
      */
-    public const NAMESPACE_ITUNES = 'https://www.itunes.com/dtds/podcast-1.0.dtd';
+    public const NAMESPACE_ITUNES = 'http://www.itunes.com/dtds/podcast-1.0.dtd';
 
     /**
      * XHTML Namespace
      */
-    public const NAMESPACE_XHTML = 'https://www.w3.org/1999/xhtml';
+    public const NAMESPACE_XHTML = 'http://www.w3.org/1999/xhtml';
 
     /**
      * IANA Link Relations Registry
      */
-    public const IANA_LINK_RELATIONS_REGISTRY = 'https://www.iana.org/assignments/relation/';
+    public const IANA_LINK_RELATIONS_REGISTRY = 'http://www.iana.org/assignments/relation/';
 
     /**
      * No file source
@@ -1546,9 +1546,9 @@ class SimplePie
      * are served as UTF-8.
      *
      * The number of supported character encodings depends on whether your web
-     * host supports {@link https://php.net/mbstring mbstring},
-     * {@link https://php.net/iconv iconv}, or both. See
-     * {@link https://simplepie.org/wiki/faq/Supported_Character_Encodings} for
+     * host supports {@link http://php.net/mbstring mbstring},
+     * {@link http://php.net/iconv iconv}, or both. See
+     * {@link http://simplepie.org/wiki/faq/Supported_Character_Encodings} for
      * more information.
      *
      * @param string $encoding
@@ -2148,13 +2148,13 @@ class SimplePie
      * Send the content-type header with correct encoding
      *
      * This method ensures that the SimplePie-enabled page is being served with
-     * the correct {@link https://www.iana.org/assignments/media-types/ mime-type}
+     * the correct {@link http://www.iana.org/assignments/media-types/ mime-type}
      * and character encoding HTTP headers (character encoding determined by the
      * {@see set_output_encoding} config option).
      *
      * This won't work properly if any content or whitespace has already been
      * sent to the browser, because it relies on PHP's
-     * {@link https://php.net/header header()} function, and these are the
+     * {@link http://php.net/header header()} function, and these are the
      * circumstances under which the function works.
      *
      * Because it's setting these settings for the entire page (as is the nature
@@ -2181,7 +2181,7 @@ class SimplePie
      * Get the type of the feed
      *
      * This returns a self::TYPE_* constant, which can be tested against
-     * using {@link https://php.net/language.operators.bitwise bitwise operators}
+     * using {@link http://php.net/language.operators.bitwise bitwise operators}
      *
      * @since 0.8 (usage changed to using constants in 1.0)
      * @see self::TYPE_NONE Unknown.
@@ -2341,7 +2341,7 @@ class SimplePie
      * </pre>
      *
      * @since 1.0
-     * @see https://simplepie.org/wiki/faq/supported_xml_namespaces
+     * @see http://simplepie.org/wiki/faq/supported_xml_namespaces
      * @param string $namespace The URL of the XML namespace of the elements you're trying to access
      * @param string $tag Tag name
      * @return array<array<string, mixed>>|null
@@ -2381,7 +2381,7 @@ class SimplePie
      * See {@see SimplePie::get_feed_tags()} for a description of the return value
      *
      * @since 1.0
-     * @see https://simplepie.org/wiki/faq/supported_xml_namespaces
+     * @see http://simplepie.org/wiki/faq/supported_xml_namespaces
      * @param string $namespace The URL of the XML namespace of the elements you're trying to access
      * @param string $tag Tag name
      * @return array<array<string, mixed>>|null
@@ -2427,7 +2427,7 @@ class SimplePie
      * See {@see SimplePie::get_feed_tags()} for a description of the return value
      *
      * @since 1.0
-     * @see https://simplepie.org/wiki/faq/supported_xml_namespaces
+     * @see http://simplepie.org/wiki/faq/supported_xml_namespaces
      * @param string $namespace The URL of the XML namespace of the elements you're trying to access
      * @param string $tag Tag name
      * @return array<array<string, mixed>>|null
@@ -2976,8 +2976,8 @@ class SimplePie
      * Uses `<geo:lat>` or `<georss:point>`
      *
      * @since 1.0
-     * @link https://www.w3.org/2003/01/geo/ W3C WGS84 Basic Geo
-     * @link https://www.georss.org/ GeoRSS
+     * @link http://www.w3.org/2003/01/geo/ W3C WGS84 Basic Geo
+     * @link http://www.georss.org/ GeoRSS
      * @return float|null
      */
     public function get_latitude()
@@ -2999,8 +2999,8 @@ class SimplePie
      * Uses `<geo:long>`, `<geo:lon>` or `<georss:point>`
      *
      * @since 1.0
-     * @link https://www.w3.org/2003/01/geo/ W3C WGS84 Basic Geo
-     * @link https://www.georss.org/ GeoRSS
+     * @link http://www.w3.org/2003/01/geo/ W3C WGS84 Basic Geo
+     * @link http://www.georss.org/ GeoRSS
      * @return float|null
      */
     public function get_longitude()
@@ -3142,7 +3142,7 @@ class SimplePie
     /**
      * Get the number of items in the feed
      *
-     * This is well-suited for {@link https://php.net/for for()} loops with
+     * This is well-suited for {@link http://php.net/for for()} loops with
      * {@see get_item()}
      *
      * @param int $max Maximum value to return. 0 for no limit
@@ -3161,9 +3161,9 @@ class SimplePie
     /**
      * Get a single item from the feed
      *
-     * This is better suited for {@link https://php.net/for for()} loops, whereas
+     * This is better suited for {@link http://php.net/for for()} loops, whereas
      * {@see get_items()} is better suited for
-     * {@link https://php.net/foreach foreach()} loops.
+     * {@link http://php.net/foreach foreach()} loops.
      *
      * @see get_item_quantity()
      * @since Beta 2
@@ -3183,9 +3183,9 @@ class SimplePie
     /**
      * Get all items from the feed
      *
-     * This is better suited for {@link https://php.net/for for()} loops, whereas
+     * This is better suited for {@link http://php.net/for for()} loops, whereas
      * {@see get_items()} is better suited for
-     * {@link https://php.net/foreach foreach()} loops.
+     * {@link http://php.net/foreach foreach()} loops.
      *
      * @see get_item_quantity
      * @since Beta 2
@@ -3356,7 +3356,7 @@ class SimplePie
      * If you're merging multiple feeds together, they need to all have dates
      * for the items or else SimplePie will refuse to sort them.
      *
-     * @link https://simplepie.org/wiki/tutorial/sort_multiple_feeds_by_time_and_date#if_feeds_require_separate_per-feed_settings
+     * @link http://simplepie.org/wiki/tutorial/sort_multiple_feeds_by_time_and_date#if_feeds_require_separate_per-feed_settings
      * @param array<SimplePie> $urls List of SimplePie feed objects to merge
      * @param int $start Starting item
      * @param int $end Number of items to return

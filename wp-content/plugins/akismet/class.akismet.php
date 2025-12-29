@@ -1636,7 +1636,7 @@ class Akismet {
 			'timeout'     => 15,
 		);
 
-		$akismet_url = $http_akismet_url = "https://{$http_host}/1.1/{$path}";
+		$akismet_url = $http_akismet_url = "http://{$http_host}/1.1/{$path}";
 
 		/**
 		 * Try SSL first; if that fails, try without it and don't try it again for a while.
@@ -1989,7 +1989,7 @@ p {
 		 *
 		 * Array
 		 * (
-		 *     [0] => https://www.example.net/?p=1 // Site that created the pingback.
+		 *     [0] => http://www.example.net/?p=1 // Site that created the pingback.
 		 *     [1] => https://www.example.com/?p=2 // Post being pingback'd on this site.
 		 * )
 		 */

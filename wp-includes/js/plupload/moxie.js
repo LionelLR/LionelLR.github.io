@@ -6,8 +6,8 @@
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  *
  * Date: 2016-05-15
  */
@@ -110,14 +110,14 @@
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 define('moxie/core/utils/Basic', [], function() {
 	/**
 	Gets the true type of the built-in object (better version of typeof).
-	@author Angus Croll (https://javascriptweblog.wordpress.com/)
+	@author Angus Croll (http://javascriptweblog.wordpress.com/)
 
 	@method typeOf
 	@for Utils
@@ -505,8 +505,8 @@ define('moxie/core/utils/Basic', [], function() {
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 define("moxie/core/utils/Env", [
@@ -935,11 +935,11 @@ define("moxie/core/utils/Env", [
 
 
 	function version_compare(v1, v2, operator) {
-	  // From: https://phpjs.org/functions
-	  // +      original by: Philippe Jausions (https://pear.php.net/user/jausions)
-	  // +      original by: Aidan Lister (https://aidanlister.com/)
-	  // + reimplemented by: Kankrelune (https://www.webfaktory.info/)
-	  // +      improved by: Brett Zamir (https://brett-zamir.me)
+	  // From: http://phpjs.org/functions
+	  // +      original by: Philippe Jausions (http://pear.php.net/user/jausions)
+	  // +      original by: Aidan Lister (http://aidanlister.com/)
+	  // + reimplemented by: Kankrelune (http://www.webfaktory.info/)
+	  // +      improved by: Brett Zamir (http://brett-zamir.me)
 	  // +      improved by: Scott Baker
 	  // +      improved by: Theriault
 	  // *        example 1: version_compare('8.2.5rc', '8.2.5a');
@@ -1097,7 +1097,7 @@ define("moxie/core/utils/Env", [
 					return false;
 				},
 
-				// ideas for this heavily come from Modernizr (https://modernizr.com/)
+				// ideas for this heavily come from Modernizr (http://modernizr.com/)
 				use_data_uri: (function() {
 					var du = new Image();
 
@@ -1210,8 +1210,8 @@ define("moxie/core/utils/Env", [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 define("moxie/core/I18n", [
@@ -1275,8 +1275,8 @@ define("moxie/core/I18n", [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 define("moxie/core/utils/Mime", [
@@ -1470,8 +1470,8 @@ define("moxie/core/utils/Mime", [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 define('moxie/core/utils/Dom', ['moxie/core/utils/Env'], function(Env) {
@@ -1653,8 +1653,8 @@ define('moxie/core/utils/Dom', ['moxie/core/utils/Env'], function(Env) {
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 define('moxie/core/Exceptions', [
@@ -1812,8 +1812,8 @@ define('moxie/core/Exceptions', [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 define('moxie/core/EventTarget', [
@@ -2116,8 +2116,8 @@ define('moxie/core/EventTarget', [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 define('moxie/runtime/Runtime', [
@@ -2719,8 +2719,8 @@ define('moxie/runtime/Runtime', [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 define('moxie/runtime/RuntimeClient', [
@@ -2895,8 +2895,8 @@ define('moxie/runtime/RuntimeClient', [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 define('moxie/file/FileInput', [
@@ -3224,8 +3224,8 @@ define('moxie/file/FileInput', [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 define('moxie/core/utils/Encode', [], function() {
@@ -3269,16 +3269,16 @@ define('moxie/core/utils/Encode', [], function() {
 			return utf8 ? utf8_decode(window.atob(data)) : window.atob(data);
 		}
 
-		// https://kevin.vanzonneveld.net
-		// +   original by: Tyler Akins (https://rumkin.com)
+		// http://kevin.vanzonneveld.net
+		// +   original by: Tyler Akins (http://rumkin.com)
 		// +   improved by: Thunder.m
 		// +      input by: Aman Gupta
-		// +   improved by: Kevin van Zonneveld (https://kevin.vanzonneveld.net)
+		// +   improved by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
 		// +   bugfixed by: Onno Marsman
 		// +   bugfixed by: Pellentesque Malesuada
-		// +   improved by: Kevin van Zonneveld (https://kevin.vanzonneveld.net)
-		// +      input by: Brett Zamir (https://brett-zamir.me)
-		// +   bugfixed by: Kevin van Zonneveld (https://kevin.vanzonneveld.net)
+		// +   improved by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
+		// +      input by: Brett Zamir (http://brett-zamir.me)
+		// +   bugfixed by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
 		// *     example 1: base64_decode('S2V2aW4gdmFuIFpvbm5ldmVsZA==');
 		// *     returns 1: 'Kevin van Zonneveld'
 		// mozilla has this native
@@ -3342,14 +3342,14 @@ define('moxie/core/utils/Encode', [], function() {
 			return window.btoa(data);
 		}
 
-		// https://kevin.vanzonneveld.net
-		// +   original by: Tyler Akins (https://rumkin.com)
+		// http://kevin.vanzonneveld.net
+		// +   original by: Tyler Akins (http://rumkin.com)
 		// +   improved by: Bayron Guevara
 		// +   improved by: Thunder.m
-		// +   improved by: Kevin van Zonneveld (https://kevin.vanzonneveld.net)
+		// +   improved by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
 		// +   bugfixed by: Pellentesque Malesuada
-		// +   improved by: Kevin van Zonneveld (https://kevin.vanzonneveld.net)
-		// +   improved by: Rafał Kukawski (https://kukawski.pl)
+		// +   improved by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
+		// +   improved by: Rafał Kukawski (http://kukawski.pl)
 		// *     example 1: base64_encode('Kevin van Zonneveld');
 		// *     returns 1: 'S2V2aW4gdmFuIFpvbm5ldmVsZA=='
 		// mozilla has this native
@@ -3404,8 +3404,8 @@ define('moxie/core/utils/Encode', [], function() {
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 define('moxie/file/Blob', [
@@ -3582,8 +3582,8 @@ define('moxie/file/Blob', [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 define('moxie/file/File', [
@@ -3667,8 +3667,8 @@ define('moxie/file/File', [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 define('moxie/file/FileDrop', [
@@ -3843,8 +3843,8 @@ define('moxie/file/FileDrop', [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 define('moxie/file/FileReader', [
@@ -3856,7 +3856,7 @@ define('moxie/file/FileReader', [
 	'moxie/runtime/RuntimeClient'
 ], function(Basic, Encode, x, EventTarget, Blob, RuntimeClient) {
 	/**
-	Utility for preloading o.Blob/o.File objects in memory. By design closely follows [W3C FileReader](https://www.w3.org/TR/FileAPI/#dfn-filereader)
+	Utility for preloading o.Blob/o.File objects in memory. By design closely follows [W3C FileReader](http://www.w3.org/TR/FileAPI/#dfn-filereader)
 	interface. Where possible uses native FileReader, where - not falls back to shims.
 
 	@class FileReader
@@ -4118,8 +4118,8 @@ define('moxie/file/FileReader', [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 define('moxie/core/utils/Url', [], function() {
@@ -4137,7 +4137,7 @@ define('moxie/core/utils/Url', [], function() {
 		var key = ['source', 'scheme', 'authority', 'userInfo', 'user', 'pass', 'host', 'port', 'relative', 'path', 'directory', 'file', 'query', 'fragment']
 		, i = key.length
 		, ports = {
-			https: 80,
+			http: 80,
 			https: 443
 		}
 		, uri = {}
@@ -4202,7 +4202,7 @@ define('moxie/core/utils/Url', [], function() {
 	*/
 	var resolveUrl = function(url) {
 		var ports = { // we ignore default ports
-			https: 80,
+			http: 80,
 			https: 443
 		}
 		, urlp = typeof(url) === 'object' ? url : parseUrl(url);
@@ -4245,8 +4245,8 @@ define('moxie/core/utils/Url', [], function() {
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 define('moxie/runtime/RuntimeTarget', [
@@ -4287,8 +4287,8 @@ define('moxie/runtime/RuntimeTarget', [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 define('moxie/file/FileReaderSync', [
@@ -4360,8 +4360,8 @@ define('moxie/file/FileReaderSync', [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 define("moxie/xhr/FormData", [
@@ -4479,8 +4479,8 @@ define("moxie/xhr/FormData", [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 define("moxie/xhr/XMLHttpRequest", [
@@ -4682,7 +4682,7 @@ define("moxie/xhr/XMLHttpRequest", [
 				responseText: null,
 
 				/**
-				Returns the response entity body (https://www.w3.org/TR/XMLHttpRequest/#response-entity-body).
+				Returns the response entity body (http://www.w3.org/TR/XMLHttpRequest/#response-entity-body).
 				Can become: ArrayBuffer, Blob, Document, JSON, Text
 				
 				@property response
@@ -4898,7 +4898,7 @@ define("moxie/xhr/XMLHttpRequest", [
 				if (!_headers[header]) {
 					_headers[header] = value;
 				} else {
-					// https://tools.ietf.org/html/rfc2616#section-4.2 (last paragraph)
+					// http://tools.ietf.org/html/rfc2616#section-4.2 (last paragraph)
 					_headers[header] += ', ' + value;
 				}
 				return true;
@@ -5274,7 +5274,7 @@ define("moxie/xhr/XMLHttpRequest", [
 		
 		/*
 		function _toASCII(str, AllowUnassigned, UseSTD3ASCIIRules) {
-			// TODO: https://tools.ietf.org/html/rfc3490#section-4.1
+			// TODO: http://tools.ietf.org/html/rfc3490#section-4.1
 			return str.toLowerCase();
 		}
 		*/
@@ -5450,8 +5450,8 @@ define("moxie/xhr/XMLHttpRequest", [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 define("moxie/runtime/Transporter", [
@@ -5587,8 +5587,8 @@ define("moxie/runtime/Transporter", [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 define("moxie/image/Image", [
@@ -5750,7 +5750,7 @@ define("moxie/image/Image", [
 					xhr.open('post', 'upload.php');
 					xhr.send(formData);
 				};
-				img.load("https://www.moxiecode.com/images/mox-logo.jpg"); // notice file extension (.jpg)
+				img.load("http://www.moxiecode.com/images/mox-logo.jpg"); // notice file extension (.jpg)
 			
 
 			@method load
@@ -6186,8 +6186,8 @@ define("moxie/image/Image", [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 /*global File:true */
@@ -6221,7 +6221,7 @@ define("moxie/runtime/html5/Runtime", [
 				display_media: Test(Env.can('create_canvas') || Env.can('use_data_uri_over32kb')),
 				do_cors: Test(window.XMLHttpRequest && 'withCredentials' in new XMLHttpRequest()),
 				drag_and_drop: Test(function() {
-					// this comes directly from Modernizr: https://www.modernizr.com/
+					// this comes directly from Modernizr: http://www.modernizr.com/
 					var div = document.createElement('div');
 					// IE has support for drag and drop since version 5, but doesn't support dropping files from desktop
 					return (('draggable' in div) || ('ondragstart' in div && 'ondrop' in div)) && 
@@ -6311,8 +6311,8 @@ define("moxie/runtime/html5/Runtime", [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 define('moxie/core/utils/Events', [
@@ -6484,8 +6484,8 @@ define('moxie/core/utils/Events', [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 /**
@@ -6665,8 +6665,8 @@ define("moxie/runtime/html5/file/FileInput", [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 /**
@@ -6714,8 +6714,8 @@ define("moxie/runtime/html5/file/Blob", [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 /**
@@ -6917,8 +6917,8 @@ define("moxie/runtime/html5/file/FileDrop", [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 /**
@@ -6997,8 +6997,8 @@ define("moxie/runtime/html5/file/FileReader", [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 /*global ActiveXObject:true */
@@ -7301,12 +7301,12 @@ define("moxie/runtime/html5/xhr/XMLHttpRequest", [
 			}
 		}
 		
-		// @credits Sergey Ilinsky	(https://www.ilinsky.com/)
+		// @credits Sergey Ilinsky	(http://www.ilinsky.com/)
 		function _getDocument(xhr) {
 			var rXML = xhr.responseXML;
 			var rText = xhr.responseText;
 			
-			// Try parsing responseText (@see: https://www.ilinsky.com/articles/XMLHttpRequest/#bugs-ie-responseXML-content-type)
+			// Try parsing responseText (@see: http://www.ilinsky.com/articles/XMLHttpRequest/#bugs-ie-responseXML-content-type)
 			if (Env.browser === 'IE' && rText && rXML && !rXML.documentElement && /[^\/]+\/[^\+]+\+xml/.test(xhr.getResponseHeader("Content-Type"))) {
 				rXML = new window.ActiveXObject("Microsoft.XMLDOM");
 				rXML.async = false;
@@ -7372,8 +7372,8 @@ define("moxie/runtime/html5/xhr/XMLHttpRequest", [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 /**
@@ -7591,8 +7591,8 @@ define("moxie/runtime/html5/utils/BinaryReader", [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
  
 /**
@@ -7735,8 +7735,8 @@ define("moxie/runtime/html5/image/JPEGHeaders", [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 /**
@@ -8224,8 +8224,8 @@ define("moxie/runtime/html5/image/ExifParser", [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 /**
@@ -8384,8 +8384,8 @@ define("moxie/runtime/html5/image/JPEG", [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 /**
@@ -8486,8 +8486,8 @@ define("moxie/runtime/html5/image/PNG", [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 /**
@@ -8759,8 +8759,8 @@ define("moxie/runtime/html5/image/MegaPixel", [], function() {
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 /**
@@ -9218,8 +9218,8 @@ define("moxie/runtime/silverlight/Runtime", [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 /*global File:true */
@@ -9325,8 +9325,8 @@ define("moxie/runtime/html4/Runtime", [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 /**
@@ -9563,8 +9563,8 @@ define("moxie/runtime/html4/file/FileInput", [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 /**
@@ -9586,8 +9586,8 @@ define("moxie/runtime/html4/file/FileReader", [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 /**
@@ -9835,8 +9835,8 @@ define("moxie/runtime/html4/xhr/XMLHttpRequest", [
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 /**
@@ -9858,8 +9858,8 @@ expose(["moxie/core/utils/Basic","moxie/core/utils/Env","moxie/core/I18n","moxie
  * Copyright 2013, Moxiecode Systems AB
  * Released under GPL License.
  *
- * License: https://www.plupload.com/license
- * Contributing: https://www.plupload.com/contributing
+ * License: http://www.plupload.com/license
+ * Contributing: http://www.plupload.com/contributing
  */
 
 /*global moxie:true */

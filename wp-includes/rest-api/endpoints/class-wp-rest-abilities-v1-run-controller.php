@@ -228,7 +228,7 @@ class WP_REST_Abilities_V1_Run_Controller extends WP_REST_Controller {
 	 */
 	public function get_run_schema(): array {
 		return array(
-			'$schema'    => 'https://json-schema.org/draft-04/schema#',
+			'$schema'    => 'http://json-schema.org/draft-04/schema#',
 			'title'      => 'ability-execution',
 			'type'       => 'object',
 			'properties' => array(

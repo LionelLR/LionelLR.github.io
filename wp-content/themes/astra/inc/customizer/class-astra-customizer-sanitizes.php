@@ -197,14 +197,14 @@ if ( ! class_exists( 'Astra_Customizer_Sanitizes' ) ) {
 				}
 
 				// Strip xlink:href.
-				$xlink_href = $current_element->getAttributeNS( 'https://www.w3.org/1999/xlink', 'href' );
+				$xlink_href = $current_element->getAttributeNS( 'http://www.w3.org/1999/xlink', 'href' );
 				if ( $xlink_href && strpos( $xlink_href, '#' ) !== 0 ) {
-					$current_element->removeAttributeNS( 'https://www.w3.org/1999/xlink', 'href' );
+					$current_element->removeAttributeNS( 'http://www.w3.org/1999/xlink', 'href' );
 				}
 
 				// Strip use tag with external references.
 				if ( strtolower( $current_element->tagName ) === 'use' ) {
-					$xlink_href = $current_element->getAttributeNS( 'https://www.w3.org/1999/xlink', 'href' );
+					$xlink_href = $current_element->getAttributeNS( 'http://www.w3.org/1999/xlink', 'href' );
 					if ( $current_element->parentNode && $xlink_href && strpos( $xlink_href, '#' ) !== 0 ) {
 						$current_element->parentNode->removeChild( $current_element );
 					}

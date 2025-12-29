@@ -2995,7 +2995,7 @@ function _make_url_clickable_cb( $matches ) {
 function _make_web_ftp_clickable_cb( $matches ) {
 	$ret  = '';
 	$dest = $matches[2];
-	$dest = 'https://' . $dest;
+	$dest = 'http://' . $dest;
 
 	// Removed trailing [.,;:)] from URL.
 	$last_char = substr( $dest, -1 );
@@ -4508,14 +4508,14 @@ function esc_url( $url, $protocols = null, $_context = 'display' ) {
 	$url = str_replace( ';//', '://', $url );
 	/*
 	 * If the URL doesn't appear to contain a scheme, we presume
-	 * it needs https:// prepended (unless it's a relative link
+	 * it needs http:// prepended (unless it's a relative link
 	 * starting with /, # or ?, or a PHP file). If the first item
 	 * in $protocols is 'https', then https:// is prepended.
 	 */
 	if ( ! str_contains( $url, ':' ) && ! in_array( $url[0], array( '/', '#', '?' ), true ) &&
 		! preg_match( '/^[a-z0-9-]+?\.php/i', $url )
 	) {
-		$scheme = ( is_array( $protocols ) && 'https' === array_first( $protocols ) ) ? 'https://' : 'https://';
+		$scheme = ( is_array( $protocols ) && 'https' === array_first( $protocols ) ) ? 'https://' : 'http://';
 		$url    = $scheme . $url;
 	}
 
@@ -5076,7 +5076,7 @@ function sanitize_option( $option, $value ) {
 				$error = $value->get_error_message();
 			} else {
 				$value = sanitize_url( $value );
-				$value = str_replace( 'https://', '', $value );
+				$value = str_replace( 'http://', '', $value );
 			}
 
 			if ( 'permalink_structure' === $option && null === $error
@@ -5456,7 +5456,7 @@ function _links_add_base( $m ) {
 	return $m[1] . '=' . $m[2] .
 		( preg_match( '#^(\w{1,20}):#', $m[3], $protocol ) && in_array( $protocol[1], wp_allowed_protocols(), true ) ?
 			$m[3] :
-			WP_https::make_absolute_url( $m[3], $_links_add_base )
+			WP_Http::make_absolute_url( $m[3], $_links_add_base )
 		)
 		. $m[2];
 }
@@ -6226,7 +6226,7 @@ function _wp_emoji_list( $type = 'entities' ) {
  * @return string Shortened URL.
  */
 function url_shorten( $url, $length = 35 ) {
-	$stripped  = str_replace( array( 'https://', 'https://', 'www.' ), '', $url );
+	$stripped  = str_replace( array( 'https://', 'http://', 'www.' ), '', $url );
 	$short_url = untrailingslashit( $stripped );
 
 	if ( strlen( $short_url ) > $length ) {

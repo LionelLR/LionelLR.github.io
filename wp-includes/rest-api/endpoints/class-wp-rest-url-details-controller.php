@@ -70,7 +70,7 @@ class WP_REST_URL_Details_Controller extends WP_REST_Controller {
 		}
 
 		$this->schema = array(
-			'$schema'    => 'https://json-schema.org/draft-04/schema#',
+			'$schema'    => 'http://json-schema.org/draft-04/schema#',
 			'title'      => 'url-details',
 			'type'       => 'object',
 			'properties' => array(
@@ -230,7 +230,7 @@ class WP_REST_URL_Details_Controller extends WP_REST_Controller {
 		 * REST endpoint are being unintentionally blocked as they are misidentified as pingback requests.
 		 * By slightly modifying the UA string, but still retaining the "WordPress" identification (via "WP")
 		 * we are able to work around this issue.
-		 * Example UA string: `WP-URLDetails/5.9-alpha-51389 (+https://localhost:8888)`.
+		 * Example UA string: `WP-URLDetails/5.9-alpha-51389 (+http://localhost:8888)`.
 		*/
 		$modified_user_agent = 'WP-URLDetails/' . get_bloginfo( 'version' ) . ' (+' . get_bloginfo( 'url' ) . ')';
 
@@ -242,7 +242,7 @@ class WP_REST_URL_Details_Controller extends WP_REST_Controller {
 		/**
 		 * Filters the HTTP request args for URL data retrieval.
 		 *
-		 * Can be used to adjust response size limit and other WP_https::request() args.
+		 * Can be used to adjust response size limit and other WP_Http::request() args.
 		 *
 		 * @since 5.9.0
 		 *
@@ -253,12 +253,12 @@ class WP_REST_URL_Details_Controller extends WP_REST_Controller {
 
 		$response = wp_safe_remote_get( $url, $args );
 
-		if ( WP_https::OK !== wp_remote_retrieve_response_code( $response ) ) {
+		if ( WP_Http::OK !== wp_remote_retrieve_response_code( $response ) ) {
 			// Not saving the error response to cache since the error might be temporary.
 			return new WP_Error(
 				'no_response',
 				__( 'URL not found. Response returned a non-200 status code for this URL.' ),
-				array( 'status' => WP_https::NOT_FOUND )
+				array( 'status' => WP_Http::NOT_FOUND )
 			);
 		}
 
@@ -268,7 +268,7 @@ class WP_REST_URL_Details_Controller extends WP_REST_Controller {
 			return new WP_Error(
 				'no_content',
 				__( 'Unable to retrieve body from response at this URL.' ),
-				array( 'status' => WP_https::NOT_FOUND )
+				array( 'status' => WP_Http::NOT_FOUND )
 			);
 		}
 
@@ -335,7 +335,7 @@ class WP_REST_URL_Details_Controller extends WP_REST_Controller {
 		$parsed_url = parse_url( $url );
 		if ( isset( $parsed_url['scheme'] ) && isset( $parsed_url['host'] ) ) {
 			$root_url = $parsed_url['scheme'] . '://' . $parsed_url['host'] . '/';
-			$icon     = WP_https::make_absolute_url( $icon, $root_url );
+			$icon     = WP_Http::make_absolute_url( $icon, $root_url );
 		}
 
 		return $icon;
@@ -408,7 +408,7 @@ class WP_REST_URL_Details_Controller extends WP_REST_Controller {
 		$parsed_url = parse_url( $url );
 		if ( isset( $parsed_url['scheme'] ) && isset( $parsed_url['host'] ) ) {
 			$root_url = $parsed_url['scheme'] . '://' . $parsed_url['host'] . '/';
-			$image    = WP_https::make_absolute_url( $image, $root_url );
+			$image    = WP_Http::make_absolute_url( $image, $root_url );
 		}
 
 		return $image;

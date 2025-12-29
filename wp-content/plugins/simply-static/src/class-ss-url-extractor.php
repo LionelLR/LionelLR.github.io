@@ -22,9 +22,9 @@ class Url_Extractor {
 
 	/**
 	 * The following pages were incredibly helpful:
-	 * - https://stackoverflow.com/questions/2725156/complete-list-of-html-tag-attributes-which-have-a-url-value
-	 * - https://nadeausoftware.com/articles/2008/01/php_tip_how_extract_urls_web_page
-	 * - https://php.net/manual/en/book.dom.php
+	 * - http://stackoverflow.com/questions/2725156/complete-list-of-html-tag-attributes-which-have-a-url-value
+	 * - http://nadeausoftware.com/articles/2008/01/php_tip_how_extract_urls_web_page
+	 * - http://php.net/manual/en/book.dom.php
 	 */
 
 	protected static $match_tags = array(
@@ -139,7 +139,7 @@ class Url_Extractor {
 	public function get_body() {
 		// Setting the stream context to prevent an issue where non-latin
 		// characters get converted to html codes like #1234; inappropriately
-		// https://stackoverflow.com/questions/5600371/file-get-contents-converts-utf-8-to-iso-8859-1
+		// http://stackoverflow.com/questions/5600371/file-get-contents-converts-utf-8-to-iso-8859-1
 		$opts    = array(
 			'http' => array(
 				'header' => "Accept-Charset: UTF-8"
@@ -391,11 +391,11 @@ class Url_Extractor {
 		// Preserve JSON attributes before replacement
 		$content = $this->preserve_attributes( $content );
 
-		// replace any instance of the origin url, whether it starts with https://, https://, or //.
+		// replace any instance of the origin url, whether it starts with https://, http://, or //.
 		$content = preg_replace( '/(https?:)?\/\/' . addcslashes( Util::origin_host(), '/' ) . '/i', $destination_url, $content );
 
 		// replace wp_json_encode'd urls, as used by WP's `concatemoji`.
-		// e.g. {"concatemoji":"https:\/\/www.example.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"}.
+		// e.g. {"concatemoji":"http:\/\/www.example.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"}.
 		$content = str_replace( addcslashes( Util::origin_url(), '/' ), addcslashes( $destination_url, '/' ), $content );
 
 		// Restore preserved JSON attributes
@@ -965,7 +965,7 @@ class Url_Extractor {
 		// First, replace protocol-relative URLs (//example.com)
 		$text = preg_replace( '/(["\'(])\/\/' . addcslashes( Util::origin_host(), '/' ) . '/i', '$1' . $convert_to, $decoded_text );
 
-		// Then replace absolute URLs (https://example.com or https://example.com)
+		// Then replace absolute URLs (http://example.com or https://example.com)
 		$text = preg_replace( '/(["\'(])(https?:)?\/\/' . addcslashes( Util::origin_host(), '/' ) . '/i', '$1' . $convert_to, $text );
 
 		// Also replace JSON-encoded URLs
@@ -1189,8 +1189,8 @@ class Url_Extractor {
 	 * fragments or params.
 	 *
 	 * Example:
-	 *   static_page->url: https://static-site.dev/2013/01/11/page-a/
-	 *               $url: https://static-site.dev/2013/01/10/page-b/
+	 *   static_page->url: http://static-site.dev/2013/01/11/page-a/
+	 *               $url: http://static-site.dev/2013/01/10/page-b/
 	 *               path: ./../../10/page-b/index.html
 	 *
 	 * @param string $url Absolute URL to convert

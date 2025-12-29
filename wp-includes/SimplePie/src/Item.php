@@ -103,7 +103,7 @@ class Item implements RegistryAware
      * See {@see \SimplePie\SimplePie::get_feed_tags()} for a description of the return value
      *
      * @since 1.0
-     * @see https://simplepie.org/wiki/faq/supported_xml_namespaces
+     * @see http://simplepie.org/wiki/faq/supported_xml_namespaces
      * @param string $namespace The URL of the XML namespace of the elements you're trying to access
      * @param string $tag Tag name
      * @return array<array<string, mixed>>|null
@@ -175,7 +175,7 @@ class Item implements RegistryAware
      *
      * Note: this may not work as you think for multifeeds!
      *
-     * @link https://simplepie.org/faq/typical_multifeed_gotchas#missing_data_from_feed
+     * @link http://simplepie.org/faq/typical_multifeed_gotchas#missing_data_from_feed
      * @since 1.0
      * @return \SimplePie\SimplePie
      */
@@ -632,7 +632,7 @@ class Item implements RegistryAware
      *
      * @since Beta 2 (previously called `get_item_date` since 0.8)
      *
-     * @param string $date_format Supports any PHP date format from {@see https://php.net/date} (empty for the raw data)
+     * @param string $date_format Supports any PHP date format from {@see http://php.net/date} (empty for the raw data)
      * @return ($date_format is 'U' ? ?int : ?string)
      */
     public function get_date(string $date_format = 'j F Y, g:i a')
@@ -687,7 +687,7 @@ class Item implements RegistryAware
      * Note: obeys PHP's timezone setting. To get a UTC date/time, use
      * {@see get_gmdate}
      *
-     * @param string $date_format Supports any PHP date format from {@see https://php.net/date} (empty for the raw data)
+     * @param string $date_format Supports any PHP date format from {@see http://php.net/date} (empty for the raw data)
      * @return ($date_format is 'U' ? ?int : ?string)
      */
     public function get_updated_date(string $date_format = 'j F Y, g:i a')
@@ -725,12 +725,12 @@ class Item implements RegistryAware
      *
      * Returns the date formatted in the localized language. To display in
      * languages other than the server's default, you need to change the locale
-     * with {@link https://php.net/setlocale setlocale()}. The available
+     * with {@link http://php.net/setlocale setlocale()}. The available
      * localizations depend on which ones are installed on your web server.
      *
      * @since 1.0
      *
-     * @param string $date_format Supports any PHP date format from {@see https://php.net/strftime} (empty for the raw data)
+     * @param string $date_format Supports any PHP date format from {@see http://php.net/strftime} (empty for the raw data)
      * @return string|null|false see `strftime` for when this can return `false`
      */
     public function get_local_date(string $date_format = '%c')
@@ -752,7 +752,7 @@ class Item implements RegistryAware
      * Get the posting date/time for the item (UTC time)
      *
      * @see get_date
-     * @param string $date_format Supports any PHP date format from {@see https://php.net/date}
+     * @param string $date_format Supports any PHP date format from {@see http://php.net/date}
      * @return string|null
      */
     public function get_gmdate(string $date_format = 'j F Y, g:i a')
@@ -769,7 +769,7 @@ class Item implements RegistryAware
      * Get the update date/time for the item (UTC time)
      *
      * @see get_updated_date
-     * @param string $date_format Supports any PHP date format from {@see https://php.net/date}
+     * @param string $date_format Supports any PHP date format from {@see http://php.net/date}
      * @return string|null
      */
     public function get_updated_gmdate(string $date_format = 'j F Y, g:i a')
@@ -1007,7 +1007,7 @@ class Item implements RegistryAware
                 if (isset($category['attribs']['']['scheme'])) {
                     $scheme = $this->sanitize($category['attribs']['']['scheme'], \SimplePie\SimplePie::CONSTRUCT_TEXT);
                 } else {
-                    $scheme = 'https://search.yahoo.com/mrss/category_schema';
+                    $scheme = 'http://search.yahoo.com/mrss/category_schema';
                 }
                 if (isset($category['attribs']['']['label'])) {
                     $label = $this->sanitize($category['attribs']['']['label'], \SimplePie\SimplePie::CONSTRUCT_TEXT);
@@ -1024,7 +1024,7 @@ class Item implements RegistryAware
                 if (isset($category['attribs']['']['scheme'])) {
                     $scheme = $this->sanitize($category['attribs']['']['scheme'], \SimplePie\SimplePie::CONSTRUCT_TEXT);
                 } else {
-                    $scheme = 'https://search.yahoo.com/mrss/category_schema';
+                    $scheme = 'http://search.yahoo.com/mrss/category_schema';
                 }
                 if (isset($category['attribs']['']['label'])) {
                     $label = $this->sanitize($category['attribs']['']['label'], \SimplePie\SimplePie::CONSTRUCT_TEXT);
@@ -1033,7 +1033,7 @@ class Item implements RegistryAware
             }
             foreach ((array) $parent->get_channel_tags(\SimplePie\SimplePie::NAMESPACE_ITUNES, 'category') as $category) {
                 $term = null;
-                $scheme = 'https://www.itunes.com/dtds/podcast-1.0.dtd';
+                $scheme = 'http://www.itunes.com/dtds/podcast-1.0.dtd';
                 $label = null;
                 if (isset($category['attribs']['']['text'])) {
                     $label = $this->sanitize($category['attribs']['']['text'], \SimplePie\SimplePie::CONSTRUCT_TEXT);
@@ -1555,7 +1555,7 @@ class Item implements RegistryAware
                                     if (isset($category['attribs']['']['scheme'])) {
                                         $scheme = $this->sanitize($category['attribs']['']['scheme'], \SimplePie\SimplePie::CONSTRUCT_TEXT);
                                     } else {
-                                        $scheme = 'https://search.yahoo.com/mrss/category_schema';
+                                        $scheme = 'http://search.yahoo.com/mrss/category_schema';
                                     }
                                     if (isset($category['attribs']['']['label'])) {
                                         $label = $this->sanitize($category['attribs']['']['label'], \SimplePie\SimplePie::CONSTRUCT_TEXT);
@@ -1574,7 +1574,7 @@ class Item implements RegistryAware
                                     if (isset($category['attribs']['']['scheme'])) {
                                         $scheme = $this->sanitize($category['attribs']['']['scheme'], \SimplePie\SimplePie::CONSTRUCT_TEXT);
                                     } else {
-                                        $scheme = 'https://search.yahoo.com/mrss/category_schema';
+                                        $scheme = 'http://search.yahoo.com/mrss/category_schema';
                                     }
                                     if (isset($category['attribs']['']['label'])) {
                                         $label = $this->sanitize($category['attribs']['']['label'], \SimplePie\SimplePie::CONSTRUCT_TEXT);
@@ -1986,7 +1986,7 @@ class Item implements RegistryAware
                                 if (isset($category['attribs']['']['scheme'])) {
                                     $scheme = $this->sanitize($category['attribs']['']['scheme'], \SimplePie\SimplePie::CONSTRUCT_TEXT);
                                 } else {
-                                    $scheme = 'https://search.yahoo.com/mrss/category_schema';
+                                    $scheme = 'http://search.yahoo.com/mrss/category_schema';
                                 }
                                 if (isset($category['attribs']['']['label'])) {
                                     $label = $this->sanitize($category['attribs']['']['label'], \SimplePie\SimplePie::CONSTRUCT_TEXT);
@@ -2293,8 +2293,8 @@ class Item implements RegistryAware
      * Uses `<geo:lat>` or `<georss:point>`
      *
      * @since 1.0
-     * @link https://www.w3.org/2003/01/geo/ W3C WGS84 Basic Geo
-     * @link https://www.georss.org/ GeoRSS
+     * @link http://www.w3.org/2003/01/geo/ W3C WGS84 Basic Geo
+     * @link http://www.georss.org/ GeoRSS
      * @return float|null
      */
     public function get_latitude()
@@ -2316,8 +2316,8 @@ class Item implements RegistryAware
      * Uses `<geo:long>`, `<geo:lon>` or `<georss:point>`
      *
      * @since 1.0
-     * @link https://www.w3.org/2003/01/geo/ W3C WGS84 Basic Geo
-     * @link https://www.georss.org/ GeoRSS
+     * @link http://www.w3.org/2003/01/geo/ W3C WGS84 Basic Geo
+     * @link http://www.georss.org/ GeoRSS
      * @return float|null
      */
     public function get_longitude()

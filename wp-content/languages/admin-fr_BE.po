@@ -8161,7 +8161,7 @@ msgstr "Vous pouvez définir la langue, et WordPress va automatiquement téléch
 msgid "If you want site visitors to be able to register themselves, check the membership box. If you want the site administrator to register every new user, leave the box unchecked. In either case, you can set a default user role for all new users."
 msgstr "Si vous voulez que les internautes puissent créer eux-mêmes un compte sur le site, cochez la case d’adhésion. Si vous voulez que l’administrateur ou l’administratrice du site soit responsable de l’inscription de chaque compte chaque, laissez la case non-cochée. Dans tous les cas, vous pouvez définir un rôle par défaut pour tout nouveau compte."
 
-#. translators: 1: https://, 2: https:
+#. translators: 1: http://, 2: https:
 #: wp-admin/options-general.php:39
 msgid "Both WordPress URL and site URL can start with either %1$s or %2$s. A URL starting with %2$s requires an SSL certificate, so be sure that you have one before changing to %2$s. With %2$s, a padlock will appear next to the address in the browser address bar. Both %2$s and the padlock signal that your site meets some basic security requirements, which can build trust with your visitors and with search engines."
 msgstr "L’URL de WordPress et l’URL du site peuvent commencer par %1$s ou %2$s. Une URL commençant par %2$s nécessite de disposer d’un certificat SSL, alors assurez-vous d’en avoir un installé avant de passer à %2$s. Avec %2$s, un cadenas va s’afficher à côté de l’adresse du site dans votre navigateur. Le fait d’avoir une adresse en %2$s et d’afficher le cadenas dans le navigateur est un bon indice que votre site respecte certaines bases de sécurité web, ce qui permet d’établir une relation de confiance avec les internautes tout comme avec les moteurs de recherche."
@@ -9530,8 +9530,8 @@ msgstr[1] "%s pages définitivement supprimées."
 
 #. Plugin URI of the plugin
 #: hello.php
-msgid "https://wordpress.org/plugins/hello-dolly/"
-msgstr "https://wordpress.org/plugins/hello-dolly/"
+msgid "http://wordpress.org/plugins/hello-dolly/"
+msgstr "http://wordpress.org/plugins/hello-dolly/"
 
 #: wp-admin/includes/class-theme-upgrader.php:80
 msgid "The theme contains no files."
@@ -9735,8 +9735,8 @@ msgstr "Hello Dolly"
 
 #. Author URI of the plugin
 #: hello.php
-msgid "https://ma.tt/"
-msgstr "https://ma.tt/"
+msgid "http://ma.tt/"
+msgstr "http://ma.tt/"
 
 #: wp-admin/includes/class-wp-debug-data.php:907 wp-admin/setup-config.php:172
 msgid "Database name"
@@ -11846,7 +11846,7 @@ msgstr ""
 "\n"
 "Si vous pensez que ces erreurs puissent être dues à un problème du côté de WordPress, pourriez-vous nous les signaler ?\n"
 "* Ouvrez une discussion sur le forum de support en anglais : https://wordpress.org/support/forum/alphabeta\n"
-"* Ou, si rédiger un rapport de bug ne vous fait pas peur : https://core.trac.wordpress.org/\n"
+"* Ou, si rédiger un rapport de bug ne vous fait pas peur : http://core.trac.wordpress.org/\n"
 "\n"
 "Merci ! -- L’équipe WordPress"
 

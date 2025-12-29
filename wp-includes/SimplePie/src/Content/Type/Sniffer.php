@@ -14,7 +14,7 @@ use SimplePie\HTTP\Response;
 /**
  * Content-type sniffing
  *
- * Based on the rules in https://tools.ietf.org/html/draft-abarth-mime-sniff-06
+ * Based on the rules in http://tools.ietf.org/html/draft-abarth-mime-sniff-06
  *
  * This is used since we can't always trust Content-Type headers, and is based
  * upon the HTML5 parsing rules.

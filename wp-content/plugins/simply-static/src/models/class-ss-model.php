@@ -215,7 +215,7 @@ class Model {
 	 * static::$columns and the indexes in static::$indexes to create a SQL
 	 * query for creating the table.
 	 *
-	 * https://wordpress.stackexchange.com/questions/78667/dbdelta-alter-table-syntax
+	 * http://wordpress.stackexchange.com/questions/78667/dbdelta-alter-table-syntax
 	 * @return void
 	 */
 	public static function create_or_update_table() {

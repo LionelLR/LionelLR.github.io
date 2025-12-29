@@ -11,8 +11,8 @@ namespace SimplePie\Net;
  * Class to validate and to work with IPv6 addresses.
  *
  * @copyright 2003-2005 The PHP Group
- * @license https://www.opensource.org/licenses/bsd-license.php
- * @link https://pear.php.net/package/Net_IPv6
+ * @license http://www.opensource.org/licenses/bsd-license.php
+ * @link http://pear.php.net/package/Net_IPv6
  * @author Alexander Merz <alexander.merz@web.de>
  * @author elfrink at introweb dot nl
  * @author Josh Peck <jmp at joshpeck dot org>
@@ -34,7 +34,7 @@ class IPv6
      * @author elfrink at introweb dot nl
      * @author Josh Peck <jmp at joshpeck dot org>
      * @copyright 2003-2005 The PHP Group
-     * @license https://www.opensource.org/licenses/bsd-license.php
+     * @license http://www.opensource.org/licenses/bsd-license.php
      * @param string $ip An IPv6 address
      * @return string The uncompressed IPv6 address
      */

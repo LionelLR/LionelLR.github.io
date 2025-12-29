@@ -3746,7 +3746,7 @@ function network_site_url( $path = '', $scheme = null ) {
 	if ( 'relative' === $scheme ) {
 		$url = $current_network->path;
 	} else {
-		$url = set_url_scheme( 'https://' . $current_network->domain . $current_network->path, $scheme );
+		$url = set_url_scheme( 'http://' . $current_network->domain . $current_network->path, $scheme );
 	}
 
 	if ( $path && is_string( $path ) ) {
@@ -3796,7 +3796,7 @@ function network_home_url( $path = '', $scheme = null ) {
 	if ( 'relative' === $scheme ) {
 		$url = $current_network->path;
 	} else {
-		$url = set_url_scheme( 'https://' . $current_network->domain . $current_network->path, $scheme );
+		$url = set_url_scheme( 'http://' . $current_network->domain . $current_network->path, $scheme );
 	}
 
 	if ( $path && is_string( $path ) ) {
@@ -3940,7 +3940,7 @@ function set_url_scheme( $url, $scheme = null ) {
 
 	$url = trim( $url );
 	if ( str_starts_with( $url, '//' ) ) {
-		$url = 'https:' . $url;
+		$url = 'http:' . $url;
 	}
 
 	if ( 'relative' === $scheme ) {

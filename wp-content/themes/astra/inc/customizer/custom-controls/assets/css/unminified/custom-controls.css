@@ -6420,7 +6420,7 @@ li#customize-control-astra-settings-header-preset-style .customizer-text {
 
 .customize-control-ast-toggle-control .components-toggle-control input.ast-checkbox:checked::before {
 	content: "";
-	background: url( "data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='https://www.w3.org/2000/svg'%3E%3Cpath d='M1 5.2L5.2 8L10.8 1' stroke='white'/%3E%3C/svg%3E" ) no-repeat center;
+	background: url( "data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 5.2L5.2 8L10.8 1' stroke='white'/%3E%3C/svg%3E" ) no-repeat center;
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -6428,7 +6428,7 @@ li#customize-control-astra-settings-header-preset-style .customizer-text {
 }
 
 .customize-control-ast-toggle-control .components-toggle-control input.ast-checkbox:hover:checked::before {
-	background-image: url( "data:image/svg+xml,%3Csvg width='8' height='2' viewBox='0 0 8 2' fill='none' xmlns='https://www.w3.org/2000/svg'%3E%3Crect y='0.5' width='8' height='1' fill='white'/%3E%3C/svg%3E" );
+	background-image: url( "data:image/svg+xml,%3Csvg width='8' height='2' viewBox='0 0 8 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='0.5' width='8' height='1' fill='white'/%3E%3C/svg%3E" );
 }
 
 @keyframes tooltips-vert {
@@ -6495,8 +6495,8 @@ li#customize-control-astra-settings-header-preset-style .customizer-text {
 	bottom: calc( 100% + 6px );
 	width: 12px;
 	height: 5px;
-	-webkit-mask: url( "data:image/svg+xml,%3Csvg width='12' height='5' viewBox='0 0 12 5' xmlns='https://www.w3.org/2000/svg'%3E%3Cpath d='M6 5.00012L12 0.00012207H0L6 5.00012Z' fill='%23000000'/%3E%3C/svg%3E" );
-	mask: url( "data:image/svg+xml,%3Csvg width='12' height='5' viewBox='0 0 12 5' xmlns='https://www.w3.org/2000/svg'%3E%3Cpath d='M6 5.00012L12 0.00012207H0L6 5.00012Z' fill='%23000000'/%3E%3C/svg%3E" );
+	-webkit-mask: url( "data:image/svg+xml,%3Csvg width='12' height='5' viewBox='0 0 12 5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 5.00012L12 0.00012207H0L6 5.00012Z' fill='%23000000'/%3E%3C/svg%3E" );
+	mask: url( "data:image/svg+xml,%3Csvg width='12' height='5' viewBox='0 0 12 5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 5.00012L12 0.00012207H0L6 5.00012Z' fill='%23000000'/%3E%3C/svg%3E" );
 }
 
 .dashicons-editor-help[data-title] + .ast-tooltip[data-title]::before,
@@ -6756,7 +6756,7 @@ a.ast-upgrade-trigger:active {
 	height: 1.5em;
 	width: 1.5em;
 	border: 1px solid var( --ast-customizer-color-1 );
-	background-image: url( "data:image/svg+xml,%3Csvg width='17' height='16' viewBox='0 0 17 16' fill='none' xmlns='https://www.w3.org/2000/svg'%3E%3Cpath d='M12.5002 7.2001H11.7002V4.8001C11.7002 3.0401 10.2602 1.6001 8.5002 1.6001C6.7402 1.6001 5.3002 3.0401 5.3002 4.8001V7.2001H4.5002C4.1002 7.2001 3.7002 7.6001 3.7002 8.0001V13.6001C3.7002 14.0001 4.1002 14.4001 4.5002 14.4001H12.5002C12.9002 14.4001 13.3002 14.0001 13.3002 13.6001V8.0001C13.3002 7.6001 12.9002 7.2001 12.5002 7.2001ZM9.3002 12.8001H7.7002L8.0202 11.0401C7.6202 10.8801 7.3002 10.4001 7.3002 10.0001C7.3002 9.3601 7.8602 8.8001 8.5002 8.8001C9.1402 8.8001 9.7002 9.3601 9.7002 10.0001C9.7002 10.4801 9.4602 10.8801 8.9802 11.0401L9.3002 12.8001ZM10.1002 7.2001H6.9002V4.8001C6.9002 3.9201 7.6202 3.2001 8.5002 3.2001C9.3802 3.2001 10.1002 3.9201 10.1002 4.8001V7.2001Z' fill='%230284C7'/%3E%3C/svg%3E" );
+	background-image: url( "data:image/svg+xml,%3Csvg width='17' height='16' viewBox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.5002 7.2001H11.7002V4.8001C11.7002 3.0401 10.2602 1.6001 8.5002 1.6001C6.7402 1.6001 5.3002 3.0401 5.3002 4.8001V7.2001H4.5002C4.1002 7.2001 3.7002 7.6001 3.7002 8.0001V13.6001C3.7002 14.0001 4.1002 14.4001 4.5002 14.4001H12.5002C12.9002 14.4001 13.3002 14.0001 13.3002 13.6001V8.0001C13.3002 7.6001 12.9002 7.2001 12.5002 7.2001ZM9.3002 12.8001H7.7002L8.0202 11.0401C7.6202 10.8801 7.3002 10.4001 7.3002 10.0001C7.3002 9.3601 7.8602 8.8001 8.5002 8.8001C9.1402 8.8001 9.7002 9.3601 9.7002 10.0001C9.7002 10.4801 9.4602 10.8801 8.9802 11.0401L9.3002 12.8001ZM10.1002 7.2001H6.9002V4.8001C6.9002 3.9201 7.6202 3.2001 8.5002 3.2001C9.3802 3.2001 10.1002 3.9201 10.1002 4.8001V7.2001Z' fill='%230284C7'/%3E%3C/svg%3E" );
 }
 
 .ast-upgrade-list-wrapper {

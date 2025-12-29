@@ -17445,8 +17445,8 @@ msgid "https://wordpress.org/"
 msgstr "https://fr-be.wordpress.org/"
 
 #: wp-includes/class-wp-editor.php:1274
-msgid "The URL you entered seems to be an external link. Do you want to add the required https:// prefix?"
-msgstr "L’URL que vous avez saisie semble être un lien externe. Voulez-vous ajouter le préfixe « https:// » nécessaire ?"
+msgid "The URL you entered seems to be an external link. Do you want to add the required http:// prefix?"
+msgstr "L’URL que vous avez saisie semble être un lien externe. Voulez-vous ajouter le préfixe « http:// » nécessaire ?"
 
 #: wp-includes/rest-api.php:51
 msgid "Namespace must not start or end with a slash."

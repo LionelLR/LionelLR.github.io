@@ -249,7 +249,7 @@ class WP_HTML_Doctype_Info {
 		/*
 		 * > The system identifier is set to…
 		 */
-		if ( 'https://www.ibm.com/data/dtd/v11/ibmxhtml1-transitional.dtd' === $system_identifier ) {
+		if ( 'http://www.ibm.com/data/dtd/v11/ibmxhtml1-transitional.dtd' === $system_identifier ) {
 			$this->indicated_compatibility_mode = 'quirks';
 			return;
 		}
