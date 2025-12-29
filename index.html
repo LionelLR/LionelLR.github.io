@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr-BE">
 <head>
+<style>
+/* Forcer l'overlay des blocs couverture */
+.wp-block-cover__gradient-background, 
+.wp-block-cover__background {
+    opacity: 0.5 !important; /* Ajuste ce chiffre pour la transparence */
+    z-index: 1;
+}
+
+/* Si tu utilisais un calque de couleur spécifique */
+.has-background-dim {
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Couleur noire à 50% */
+}
+</style>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11"> 
