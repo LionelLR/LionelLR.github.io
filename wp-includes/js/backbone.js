@@ -1598,7 +1598,7 @@
 
     // Default options, unless specified.
     _.defaults(options || (options = {}), {
-      emulateHTTP: Backbone.emulateHTTP,
+      emulatehttps: Backbone.emulateHTTP,
       emulateJSON: Backbone.emulateJSON
     });
 

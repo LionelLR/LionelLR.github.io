@@ -449,7 +449,7 @@ class WP_oEmbed {
 		 *
 		 * @since 4.0.0
 		 *
-		 * @see WP_Http::request()
+		 * @see WP_https::request()
 		 *
 		 * @param array  $args oEmbed remote get arguments.
 		 * @param string $url  URL to be inspected.

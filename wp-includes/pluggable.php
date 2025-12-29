@@ -1662,7 +1662,7 @@ if ( ! function_exists( 'wp_validate_redirect' ) ) :
 		$location = wp_sanitize_redirect( trim( $location, " \t\n\r\0\x08\x0B" ) );
 		// Browsers will assume 'http' is your protocol, and will obey a redirect to a URL starting with '//'.
 		if ( str_starts_with( $location, '//' ) ) {
-			$location = 'http:' . $location;
+			$location = 'https:' . $location;
 		}
 
 		/*
@@ -1816,7 +1816,7 @@ if ( ! function_exists( 'wp_notify_postauthor' ) ) :
 		}
 
 		$comment_author_domain = '';
-		if ( WP_Http::is_ip_address( $comment->comment_author_IP ) ) {
+		if ( WP_https::is_ip_address( $comment->comment_author_IP ) ) {
 			$comment_author_domain = gethostbyaddr( $comment->comment_author_IP );
 		}
 
@@ -2029,7 +2029,7 @@ if ( ! function_exists( 'wp_notify_moderator' ) ) :
 		}
 
 		$comment_author_domain = '';
-		if ( WP_Http::is_ip_address( $comment->comment_author_IP ) ) {
+		if ( WP_https::is_ip_address( $comment->comment_author_IP ) ) {
 			$comment_author_domain = gethostbyaddr( $comment->comment_author_IP );
 		}
 

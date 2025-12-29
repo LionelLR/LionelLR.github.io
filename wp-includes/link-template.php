@@ -3940,7 +3940,7 @@ function set_url_scheme( $url, $scheme = null ) {
 
 	$url = trim( $url );
 	if ( str_starts_with( $url, '//' ) ) {
-		$url = 'http:' . $url;
+		$url = 'https:' . $url;
 	}
 
 	if ( 'relative' === $scheme ) {

@@ -4137,7 +4137,7 @@ define('moxie/core/utils/Url', [], function() {
 		var key = ['source', 'scheme', 'authority', 'userInfo', 'user', 'pass', 'host', 'port', 'relative', 'path', 'directory', 'file', 'query', 'fragment']
 		, i = key.length
 		, ports = {
-			http: 80,
+			https: 80,
 			https: 443
 		}
 		, uri = {}
@@ -4202,7 +4202,7 @@ define('moxie/core/utils/Url', [], function() {
 	*/
 	var resolveUrl = function(url) {
 		var ports = { // we ignore default ports
-			http: 80,
+			https: 80,
 			https: 443
 		}
 		, urlp = typeof(url) === 'object' ? url : parseUrl(url);

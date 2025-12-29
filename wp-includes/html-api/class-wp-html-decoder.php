@@ -14,13 +14,13 @@ class WP_HTML_Decoder {
 	 * Indicates if an attribute value starts with a given raw string value.
 	 *
 	 * Use this method to determine if an attribute value starts with a given string, regardless
-	 * of how it might be encoded in HTML. For instance, `http:` could be represented as `http:`
+	 * of how it might be encoded in HTML. For instance, `https:` could be represented as `https:`
 	 * or as `http&colon;` or as `&#x68;ttp:` or as `h&#116;tp&colon;`, or in many other ways.
 	 *
 	 * Example:
 	 *
 	 *     $value = 'http&colon;//wordpress.org/';
-	 *     true   === WP_HTML_Decoder::attribute_starts_with( $value, 'http:', 'ascii-case-insensitive' );
+	 *     true   === WP_HTML_Decoder::attribute_starts_with( $value, 'https:', 'ascii-case-insensitive' );
 	 *     false  === WP_HTML_Decoder::attribute_starts_with( $value, 'https:', 'ascii-case-insensitive' );
 	 *
 	 * @since 6.6.0

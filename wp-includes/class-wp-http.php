@@ -586,8 +586,8 @@ class WP_Http {
 	 * The order for requests is cURL, and then PHP Streams.
 	 *
 	 * @since 3.2.0
-	 * @deprecated 5.1.0 Use WP_Http::request()
-	 * @see WP_Http::request()
+	 * @deprecated 5.1.0 Use WP_https::request()
+	 * @see WP_https::request()
 	 *
 	 * @param string $url  URL to request.
 	 * @param array  $args Request arguments.
@@ -630,7 +630,7 @@ class WP_Http {
 	 * @param string       $url  The request URL.
 	 * @param string|array $args Optional. Override the defaults.
 	 * @return array|WP_Error Array containing 'headers', 'body', 'response', 'cookies', 'filename'.
-	 *                        A WP_Error instance upon error. See WP_Http::response() for details.
+	 *                        A WP_Error instance upon error. See WP_https::response() for details.
 	 */
 	public function post( $url, $args = array() ) {
 		$defaults    = array( 'method' => 'POST' );
@@ -648,7 +648,7 @@ class WP_Http {
 	 * @param string       $url  The request URL.
 	 * @param string|array $args Optional. Override the defaults.
 	 * @return array|WP_Error Array containing 'headers', 'body', 'response', 'cookies', 'filename'.
-	 *                        A WP_Error instance upon error. See WP_Http::response() for details.
+	 *                        A WP_Error instance upon error. See WP_https::response() for details.
 	 */
 	public function get( $url, $args = array() ) {
 		$defaults    = array( 'method' => 'GET' );
@@ -666,7 +666,7 @@ class WP_Http {
 	 * @param string       $url  The request URL.
 	 * @param string|array $args Optional. Override the defaults.
 	 * @return array|WP_Error Array containing 'headers', 'body', 'response', 'cookies', 'filename'.
-	 *                        A WP_Error instance upon error. See WP_Http::response() for details.
+	 *                        A WP_Error instance upon error. See WP_https::response() for details.
 	 */
 	public function head( $url, $args = array() ) {
 		$defaults    = array( 'method' => 'HEAD' );

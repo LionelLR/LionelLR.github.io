@@ -589,7 +589,7 @@ __webpack_require__.d(__webpack_exports__, {
   isValidProtocol: () => (/* reexport */ isValidProtocol),
   isValidQueryString: () => (/* reexport */ isValidQueryString),
   normalizePath: () => (/* reexport */ normalizePath),
-  prependHTTP: () => (/* reexport */ prependHTTP),
+  prependhttps: () => (/* reexport */ prependHTTP),
   prependHTTPS: () => (/* reexport */ prependHTTPS),
   removeQueryArgs: () => (/* reexport */ removeQueryArgs),
   safeDecodeURI: () => (/* reexport */ safeDecodeURI),
@@ -964,7 +964,7 @@ function prependHTTPS(url) {
     return url;
   }
   url = prependHTTP(url);
-  return url.replace(/^http:/, "https:");
+  return url.replace(/^https:/, "https:");
 }
 
 
